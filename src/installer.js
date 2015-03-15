@@ -1,9 +1,9 @@
-ScratchExtensions.loadExternalJS('http://www.googledrive.com/host/0BwZCk9UtDHYoTHdDUGlFa0Q2aXM');
-ScratchExtensions.loadExternalJS('http://www.googledrive.com/host/0BwZCk9UtDHYoUHdSQklzYjlkeHM');
-ScratchExtensions.loadExternalJS('http://www.googledrive.com/host/0BwZCk9UtDHYoTkUwLXIxNE1SN1k');
-ScratchExtensions.loadExternalJS('http://www.googledrive.com/host/0BwZCk9UtDHYod0lMV21iaHRadFE');
-ScratchExtensions.loadExternalJS('http://www.googledrive.com/host/0BwZCk9UtDHYoaGxZMXcwRlplRVU');
-ScratchExtensions.loadExternalJS('http://www.googledrive.com/host/0BwZCk9UtDHYoenZTdk9uT1R3WDQ');
+ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/strings.js');
+ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/strings.js');
+ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/strings.js');
+ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/strings.js');
+ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/strings.js');
+ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/strings.js');
 $(".box-head > .buttons").append('<div class="button" onclick="info()"><span class="white">Scratch Boost</span></div>');
 var inf = "";
 function info() {
