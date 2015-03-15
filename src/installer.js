@@ -9,7 +9,7 @@ var inf = "";
 function info() {
     if (inf === "") {
         inf = $("#info").html();
-        $("#info").html('<div class="dynamic"><div class="text-block"><b>Scratch Boost Info</b><div class="read-only instructions" style="height: 161.5px;"><p>Scratch Boost by: iwotastic</p></div></div></div>');    
+        $("#info").html('<div class="dynamic"><div class="text-block"><b>Scratch Boost Info</b><div class="read-only instructions" style="height: 161.5px;"><p>Scratch Boost by: Iwotastic<br>View on <a href="https://github.com/Iwotastic/Scratch-Boost">GitHub</a><br>View <a href="http://scratch.mit.edu/discuss/topic/68370/">Scratch discussion topic</p></div></div></div>');    
       }else{
         $("#info").html(inf);
         inf = "";
