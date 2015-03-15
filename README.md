@@ -1,2 +1,2 @@
-# Scratch-Boost
+# Scratch Boost
 Currently unfinished.
