@@ -1,9 +1,10 @@
-ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/strings.js');
-ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/scratch.js');
-ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/misc.js');
-ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/local.js');
-ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/jscript.js');
-ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/browser.js');
+/* fixed by MrSherlockHolmes */
+ScratchExtensions.loadExternalJS('https://cdn.rawgit.com/Iwotastic/Scratch-Boost/master/src/strings.js');
+ScratchExtensions.loadExternalJS('https://cdn.rawgit.com/Iwotastic/Scratch-Boost/master/src/scratch.js');
+ScratchExtensions.loadExternalJS('https://cdn.rawgit.com/Iwotastic/Scratch-Boost/master/src/misc.js');
+ScratchExtensions.loadExternalJS('https://cdn.rawgit.com/Iwotastic/Scratch-Boost/master/src/local.js');
+ScratchExtensions.loadExternalJS('https://cdn.rawgit.com/Iwotastic/Scratch-Boost/master/src/jscript.js');
+ScratchExtensions.loadExternalJS('https://cdn.rawgit.com/Iwotastic/Scratch-Boost/master/src/browser.js');
 $(".box-head > .buttons").append('<div class="button" onclick="info()"><span class="white">Scratch Boost</span></div>');
 var inf = "";
 function info() {
