@@ -37,9 +37,6 @@
     ext.bi = function() {
         return true
     }
-    ext.rgb = function(r, g, b) {
-        return ((r*65536)+(g*256)+b);
-    }
     ext.com = function() {}
     ext.bcom = function() {}
     ext.when = function(tf) {
@@ -65,7 +62,6 @@
             [' ', 'set countdown to %n secs', 'countdown', 1],
             ['r', 'if %b then %s else %s', 'ifElseVal', null, '1', '0'],
             ['b', '%n %m.inequals %n', 'inequal', 2, '≠', 2],
-            ['r', 'color r: %n g: %n b: %n', 'rgb', 255, 255, 255],
             ['b', 'Scratch Boost installed?', 'bi'],
             [' ', 'comment %s', 'com', 'Blah Blah Blah'],
             ['c', 'block comment', 'bcom'],
