@@ -5,7 +5,7 @@ ScratchExtensions.loadExternalJS('https://rawgit.com/Ealgase/Scratch-Boost/maste
 ScratchExtensions.loadExternalJS('https://rawgit.com/Ealgase/Scratch-Boost/master/src/jscript.js');
 ScratchExtensions.loadExternalJS('https://rawgit.com/Ealgase/Scratch-Boost/master/src/browser.js');
 ScratchExtensions.loadExternalJS('https://rawgit.com/Ealgase/Scratch-Boost/master/src/color.js');
-ScratchExtensions.loadExternalJS('https://rawgit.com/Ealgase/Scratch-Boost/master/src/jsmath.js');
+ScratchExtensions.loadExternalJS('https://rawgit.com/Ealgase/Scratch-Boost/master/src/jsmath.js')
 $(".box-head > .buttons").append('<div class="button" onclick="info()"><span class="white">Scratch Boost</span></div>');
 var inf = "";
 function info() {
