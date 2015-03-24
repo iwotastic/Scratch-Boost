@@ -6,10 +6,10 @@ To install Scratch Boost go to the [installation page](https://Ealgase.github.io
 
 # Libraries
 Scratch Boost has the following libraries:
-- [x] Browser
-- [x] Colors
-- [x] JavaScript
-- [x] Local Variables
-- [x] Miscellaneous
-- [x] Scratch
-- [x] Strings
+- Browser
+- Colors
+- JavaScript
+- Local Variables
+- Miscellaneous
+- Scratch
+- Strings
