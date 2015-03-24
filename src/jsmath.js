@@ -5,7 +5,7 @@
     };
     ext.pi = function(){return Math.PI}
     ext.e = function(){return Math.E}
-    ext.e = function(num){return Math.Log(num)}
+    ext.log = function(num){return Math.Log(num)}
     var descriptor = {
         blocks: [
             ['r', 'π(Pi)', 'pi'],
