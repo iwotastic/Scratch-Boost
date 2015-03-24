@@ -5,12 +5,14 @@
         return {status: 2, msg: 'Ready'};
     };
     ext.pi = function(){return Math.PI;};
+    ext.e = function(){return Math.E;};
+    ext.e = function(num){return Math.Log(num);};
     };
     var descriptor = {
         blocks: [
-            [' ', 'import Scratch extension from URL: %s', 'imp'],
             ['r', 'π(Pi)', 'pi'],
-            [' ', 'run JS %s', 'exe', 'alert("Scratch is awesome!");'],
+            ['r', "E", 'e'],
+            ['r', "log %n", 'log', '2'],
         ]
     };
     ScratchExtensions.register('Boost - JavaScript Math', descriptor, ext);
