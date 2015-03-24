@@ -1,5 +1,4 @@
 (function(ext) {
-    var userHasAllowedJs = false;
 	ext._shutdown = function() {};
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
@@ -7,7 +6,6 @@
     ext.pi = function(){return Math.PI;};
     ext.e = function(){return Math.E;};
     ext.e = function(num){return Math.Log(num);};
-    };
     var descriptor = {
         blocks: [
             ['r', 'π(Pi)', 'pi'],
