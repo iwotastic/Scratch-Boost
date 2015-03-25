@@ -36,7 +36,7 @@
         ],
         menus: {
     },
-        url: 'http://www.ealgase.github.io/Scratch-Boost'
+        url: ['http://www.ealgase.github.io/Scratch-Boost']
     }; 
     ScratchExtensions.register('Boost - Browser', descriptor, ext);
 })({});
