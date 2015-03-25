@@ -56,6 +56,7 @@
             }
         }
     }
+    ext.comr=function(){return};
     var descriptor = {
         blocks: [
             ['h', 'when countdown goes off', 'countdownOff'],
@@ -64,6 +65,7 @@
             ['b', '%n %m.inequals %n', 'inequal', 2, '≠', 2],
             ['b', 'Scratch Boost installed?', 'bi'],
             [' ', 'comment %s', 'com', 'Blah Blah Blah'],
+            ['r', 'reporter comment %s', 'comr', 'Blah Blah Blah'],
             ['c', 'block comment', 'bcom'],
             ['h', 'whenever %b becomes true', 'when', null],
         ],
