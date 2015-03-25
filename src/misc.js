@@ -56,7 +56,7 @@
             }
         }
     }
-    ext.comr=function(){return};
+    ext.comr=function(){return ''};
     var descriptor = {
         blocks: [
             ['h', 'when countdown goes off', 'countdownOff'],
