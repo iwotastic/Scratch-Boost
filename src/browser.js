@@ -34,6 +34,8 @@
             [' ', 'set tab name to %s', 'setTab', 'Hey!'],
             ['r', 'tab name', 'tabN'],
         ],
+        menus: {
+    },
         url: 'http://www.ealgase.github.io/Scratch-Boost'
     }; 
     ScratchExtensions.register('Boost - Browser', descriptor, ext);
