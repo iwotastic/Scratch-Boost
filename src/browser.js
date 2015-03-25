@@ -33,7 +33,8 @@
             ['r', 'prompt %s with default value %s', 'defv', 'What is your favorite color?', 'Purple'],
             [' ', 'set tab name to %s', 'setTab', 'Hey!'],
             ['r', 'tab name', 'tabN'],
-        ]
+        ],
+        url: 'ealgase.github.io/Scratch-Boost'
     }; 
     ScratchExtensions.register('Boost - Browser', descriptor, ext);
 })({});
