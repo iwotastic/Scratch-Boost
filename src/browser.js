@@ -24,6 +24,23 @@
     ext.defv = function(text, val) {
         return prompt(text, val);
     };
+        ext.searchNewTab = function(query, engine, callback) {
+      var realquery = query.replace(" ", "+");
+      if (engine == 'Google') {
+          window.open('http://www.google.com/search?q=' + realquery, '_blank').focus();
+      } else if (engine == 'Duck Duck Go') {
+          window.open('http://www.duckduckgo.com/?q=' + realquery, '_blank').focus();
+      } else if (engine == 'Bing') {
+          window.open('http://bing.com/search?q=' + realquery, '_blank').focus();
+      } else if (engine == 'Ask') {
+          window.open('http://ask.com/web?q=' + realquery, '_blank').focus();
+      } else if (engine == 'Yahoo') {
+          window.open('http://search.yahoo.com/search?q=' + realquery + '&fr=sfp', '_blank').focus();
+      } else {
+          return;
+      }
+      callback();
+    };
     var descriptor = {
         blocks: [
             [' ', 'alert %s', 'say', 'Hello!'],
@@ -33,10 +50,11 @@
             ['r', 'prompt %s with default value %s', 'defv', 'What is your favorite color?', 'Purple'],
             [' ', 'set tab name to %s', 'setTab', 'Hey!'],
             ['r', 'tab name', 'tabN'],
+            ['w', 'search %s on %m.searchEngine', 'searchNewTab'],
         ],
         menus: {
+           searchEngine: ['Google', 'Yahoo', 'Bing','Duck Duck Go','Ask'],
     },
-        url: ['http://www.ealgase.github.io/Scratch-Boost']
     }; 
     ScratchExtensions.register('Boost - Browser', descriptor, ext);
 })({});
