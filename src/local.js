@@ -32,18 +32,6 @@
             console.log('Local variables not supported. :/');
         }
     }
-    ext.localVarExists = function(name) {
-        if (typeof(Storage) != 'undefined') {
-            if (localStorage.getItem('BLV' + name + pid)) {
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            console.log('Local variables not supported. :/');
-            return false;
-        }
-    }
     ext.delLocalVar = function(name) {
         if (typeof(Storage) != 'undefined') {
             if (localStorage.getItem('BLV' + name + pid)) {
@@ -74,8 +62,7 @@
             [' ', 'create local variable %s', 'makeLocalVar', 'x'],
             ['r', 'local variable %s', 'getLocalVar', 'x'],
             [' ', 'set local variable %s to %s', 'setLocalVar', 'x', 'hi'],
-            [' ', 'delete local variable %s', 'delLocalVar', 'x'],
-            ['b', 'local variable %s exists', 'localVarExists', 'x']
+            [' ', 'delete local variable %s', 'delLocalVar', 'x']
         ]
     };
     ScratchExtensions.register('Boost - Local Variables', descriptor, ext);
