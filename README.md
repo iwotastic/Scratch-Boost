@@ -16,5 +16,5 @@ Scratch Boost has the following libraries:
 - JavaScript Math
 
 #Goals
-- [ ]Add logarithim block
-- [x]Add color library
+-[ ] Add logarithim block
+-[x] Add color library
