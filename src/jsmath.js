@@ -8,16 +8,16 @@
     ext.exp = function(num1,num2){return Math.pow(num1,num2)}
     ext.math = function(num1,operation,num2){
         switch(operation){
-        	case +:
+        	case 'plus':
         		return num1+num2;
         		break;
-        	case -:
+        	case 'minus':
         		return num1-num2;
         		break;
-        	case *:
+        	case 'times':
         		return num1*num2;
         		break;
-        	case /:
+        	case 'divided by':
         		return num1/num2;
         		break;
         	default:
@@ -31,7 +31,7 @@
             ['r', "%n %m.math %n", 'math','2','+','2'],
         ]
         menus:{
-        math: ['+','-','*','/','^'],
+        math: ['plus','minus','times','divided by','to the power of'],
         }
     }
     ScratchExtensions.register('Boost - JavaScript Math', descriptor, ext)
