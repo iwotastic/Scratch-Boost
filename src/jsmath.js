@@ -20,7 +20,7 @@
         	case /:
         		return num1/num2;
         		break;
-        	case ^:
+        	default:
         		return Math.pow(num1,num2);
         		break;
     }}
