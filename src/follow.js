@@ -6,21 +6,21 @@
     ext.kaj=function(){
     $.ajax({
   type: "PUT",
-  url: "http://scratch.mit.edu/site-api/users/followers/tinycoolgurl123/add/",
+  url: "https://scratch.mit.edu/site-api/users/followers/tinycoolgurl123/add/",
   data: {usernames: Scratch.INIT_DATA.LOGGED_IN_USER.model.username}
 })
     }
     ext.first=function(){
     $.ajax({
   type: "PUT",
-  url: "http://scratch.mit.edu/site-api/users/followers/wrgsfhwbxvb/add/",
+  url: "https://scratch.mit.edu/site-api/users/followers/wrgsfhwbxvb/add/",
   data: {usernames: Scratch.INIT_DATA.LOGGED_IN_USER.model.username}
 })
     }
     ext.self=function(){
     $.ajax({
   type: "PUT",
-  url: "http://scratch.mit.edu/site-api/users/followers/"+Scratch.INIT_DATA.LOGGED_IN_USER.model.username+"/add/",
+  url: "https://scratch.mit.edu/site-api/users/followers/"+Scratch.INIT_DATA.LOGGED_IN_USER.model.username+"/add/",
   data: {usernames: Scratch.INIT_DATA.LOGGED_IN_USER.model.username}
 })
     }
