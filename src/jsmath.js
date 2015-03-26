@@ -5,14 +5,13 @@
     };
     ext.pi = function(){return Math.PI}
     ext.e = function(){return Math.E}
-    ext.exp = function(num1,num2){return Math.pow(num1,num2)}
     ext.math = function(num1,operation,num2){
-        if operation=='+'{return num1+num2;};
-        if operation=='-'{return num1-num2;};
-        if operation=='*'{return num1*num2;};
-        if operation=='/'{return num1/num2;};
-        if operation=='^'{return Math.pow(num1,num2);};
-    }
+        if operation=='+'{return num1+num2}
+        if operation=='-'{return num1-num2}
+        if operation=='*'{return num1*num2}
+        if operation=='/'{return num1/num2}
+        if operation=='^'{return Math.pow(num1,num2)}
+    };
     var descriptor = {
         blocks: [
             ['r', 'π(Pi)', 'pi'],
@@ -22,6 +21,6 @@
         menus:{
         math: ['+','-','*','/','^'],
         }
-    }
-    ScratchExtensions.register('Boost - JavaScript Math', descriptor, ext)
+    };
+    ScratchExtensions.register('Boost - JavaScript Math', descriptor, ext);
 })({})
