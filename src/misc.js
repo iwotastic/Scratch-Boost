@@ -57,7 +57,7 @@
         }
     }
     ext.comr=function(){return ''};
-    ext.join=function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z){return a.toString()+b+c+d+e+f+g+h+i+j+k+l+m+nn+o+p+q+r+s+t+u+v+w+x+y+z}
+    //ext.join=function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z){return a.toString()+b+c+d+e+f+g+h+i+j+k+l+m+nn+o+p+q+r+s+t+u+v+w+x+y+z}
     var descriptor = {
         blocks: [
             ['h', 'when countdown goes off', 'countdownOff'],
@@ -69,7 +69,7 @@
             ['r', 'reporter comment %s', 'comr', 'Blah Blah Blah'],
             ['c', 'block comment', 'bcom'],
             ['h', 'whenever %b becomes true', 'when', null],
-            ['r', 'join %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s', 'join', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
+            //['r', 'join %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s', 'join', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
         ],
         menus: {
             inequals: ['≥', '≤', '≠']
