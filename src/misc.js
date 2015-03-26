@@ -69,7 +69,7 @@
             ['r', 'reporter comment %s', 'comr', 'Blah Blah Blah'],
             ['c', 'block comment', 'bcom'],
             ['h', 'whenever %b becomes true', 'when', null],
-            ['s', 'join %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s', 'join', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
+            ['r', 'join %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s', 'join', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
         ],
         menus: {
             inequals: ['≥', '≤', '≠']
