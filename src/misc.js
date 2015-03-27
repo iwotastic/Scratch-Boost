@@ -3,7 +3,7 @@
     var readyS = true;
 	ext._shutdown = function() {};
     ext._getStatus = function() {
-        return {status: 1, msg: 'Some blocks may not work.'};
+        return {status: 2, msg: 'Ready'};
     };
     ext.countdown = function(time) {
         window.setTimeout(function(){
@@ -58,7 +58,6 @@
     }
     ext.comr=function(){return ''};
     ext.tf=function(tof){return tof};
-    //ext.join=function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z){return a.toString()+b+c+d+e+f+g+h+i+j+k+l+m+nn+o+p+q+r+s+t+u+v+w+x+y+z}
     var descriptor = {
         blocks: [
             ['h', 'when countdown goes off', 'countdownOff'],
@@ -71,7 +70,6 @@
             ['c', 'block comment', 'bcom'],
             ['h', 'whenever %b becomes true', 'when', null],
             ['b', '%m.truefalse', 'tf', true],
-            //['r', 'join %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s', 'join', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
         ],
         menus: {
             inequals: ['≥', '≤', '≠'],
