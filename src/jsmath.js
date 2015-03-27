@@ -22,5 +22,5 @@
         math: ['+','-','*','/','^'],
         }
     };
-    ScratchExtensions.register('Boost - JavaScript Math', descriptor, ext);
+    ScratchExtensions.register('Boost - Math', descriptor, ext);
 })({})
