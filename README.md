@@ -18,3 +18,4 @@ Scratch Boost has the following libraries:
 #Goals
 - [ ] Add logarithim block
 - [x] Add color library
+- [x] Add all operation block to math library
