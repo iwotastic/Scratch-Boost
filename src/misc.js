@@ -76,5 +76,5 @@
             truefalse: ['true','false'],
         }
     };
-    ScratchExtensions.register('Boost - Miscellaneous3', descriptor, ext);
+    ScratchExtensions.register('Boost - Miscellaneous', descriptor, ext);
 })({});
