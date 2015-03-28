@@ -12,14 +12,30 @@
         if (operation=='/'){return num1/num2}
         if (operation=='^'){return Math.pow(num1,num2)}
     };
+    ext.tf=function(tof){return tof};
+    ext.inequal = function(x, ine, y) {
+        if (ine == '≥') {
+            return (x >= y);
+        }else if (ine == '≤') {
+            return (x <= y);
+        }else if (ine == '≠') {
+            return (x != y);
+        }
+    }
     var descriptor = {
         blocks: [
             ['r', 'π(Pi)', 'pi'],
             ['r', "E", 'e'],
+            ['-'],
             ['r', "%n %m.math %n", 'math','2','+','2'],
+            ['b', '%n %m.inequals %n', 'inequal', 2, '≠', 2],
+            ['-'],
+            ['b', '%m.truefalse', 'tf', true],
         ],
         menus:{
-        math: ['+','-','*','/','^'],
+            inequals: ['≥', '≤', '≠'],
+            math: ['+','-','*','/','^'],
+            truefalse: ['true','false'],
         }
     };
     ScratchExtensions.register('Boost - Operators', descriptor, ext);
