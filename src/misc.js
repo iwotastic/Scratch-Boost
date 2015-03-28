@@ -37,8 +37,6 @@
     ext.bi = function() {
         return true
     }
-    ext.com = function() {}
-    ext.bcom = function() {}
     ext.when = function(tf) {
         if(readyS){
             if(tf){
@@ -56,7 +54,6 @@
             }
         }
     }
-    ext.comr=function(){return ''};
     ext.tf=function(tof){return tof};
     var descriptor = {
         blocks: [
@@ -65,9 +62,6 @@
             ['r', 'if %b then %s else %s', 'ifElseVal', null, '1', '0'],
             ['b', '%n %m.inequals %n', 'inequal', 2, '≠', 2],
             ['b', 'Scratch Boost installed?', 'bi'],
-            [' ', 'comment %s', 'com', 'Blah Blah Blah'],
-            ['r', 'reporter comment %s', 'comr', 'Blah Blah Blah'],
-            ['c', 'block comment', 'bcom'],
             ['h', 'whenever %b becomes true', 'when', null],
             ['b', '%m.truefalse', 'tf', true],
         ],
