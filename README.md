@@ -14,6 +14,7 @@ Scratch Boost has the following libraries:
 - Scratch
 - Strings
 - Math
+- Comments
 
 #Goals
 - [ ] Add logarithim block
