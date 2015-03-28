@@ -39,7 +39,9 @@
             ['b', '%s contains %s', 'contains', 'abc', 'a'],
             ['r', 'where is %s in %s', 'where', 'b', 'abc'], 
             ['r', 'letters %n to %n of %s', 'nton', 1, 3, 'caterpillar'],
+            ['-'],
             ['b', '%s to boolean', 'toBool', 'true'],
+            ['-'],
             ['r', 'number of words in %s', 'wordN', 'Scratch is awesome!'],
             ['r', 'how many times is %s in %s', 'numOf', 'buffalo', 'Buffalo buffalo buffalo Buffalo buffalo.'],
         ]
