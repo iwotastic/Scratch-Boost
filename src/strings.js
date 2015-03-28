@@ -41,7 +41,7 @@
             ['r', 'letters %n to %n of %s', 'nton', 1, 3, 'caterpillar'],
             ['b', '%s to boolean', 'toBool', 'true'],
             ['r', 'number of words in %s', 'wordN', 'Scratch is awesome!'],
-            ['r', 'how many times is %s in %s', 'numOf', 'cat', 'I like cats, do you like cats?'],
+            ['r', 'how many times is %s in %s', 'numOf', 'buffalo', 'Buffalo buffalo buffalo Buffalo buffalo.'],
         ]
     };
     ScratchExtensions.register('Boost - Strings', descriptor, ext); 
