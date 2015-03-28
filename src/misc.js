@@ -54,8 +54,6 @@
             ['h', 'whenever %b becomes true', 'when', null, 'true'],
         ],
         menus: {
-            inequals: ['≥', '≤', '≠'],
-            truefalse: ['true','false'],
         }
     };
     ScratchExtensions.register('Boost - Miscellaneous', descriptor, ext);
