@@ -67,9 +67,12 @@
             [' ', 'see inside', 'inside'],
             [' ', 'see project page', 'outside'],
             [' ', 'toggle see inside', 'toggle'],
+            ['-'],
             ['r', 'project ID', 'pid'],
+            ['-'],
             [' ', 'set %m.domed color to r: %n g: %n b: %n', 'dom', 'navbar background', 255, 195, 0],
-            [' ', 'go to %m.links %s', 'link', 'the profile page of', 'iwotastic'],
+            ['-'],
+            [' ', 'go to %m.links %s', 'link', 'the profile page of', 'ealgase'],
         ],
         menus: {
             domed: ['navbar', 'navbar background'],
