@@ -46,10 +46,12 @@
             [' ', 'alert %s', 'say', 'Hello!'],
             ['b', 'ask %s', 'ask', 'Do you want to continue?'],
             ['r', 'prompt %s', 'write', 'What is your favorite color?'],
-            [' ', 'show copy box %s', 'copy', 'Copy This!'],
             ['r', 'prompt %s with default value %s', 'defv', 'What is your favorite color?', 'Purple'],
+            [' ', 'show copy box %s', 'copy', 'Copy This!'],
+            ['-'],
             [' ', 'set tab name to %s', 'setTab', 'Hey!'],
             ['r', 'tab name', 'tabN'],
+            ['-'],
             ['w', 'search %s on %m.searchEngine', 'searchNewTab'],
         ],
         menus: {
