@@ -19,5 +19,6 @@ Scratch Boost has the following libraries:
 #Goals
 - [x] Add color library
 - [x] Add all operation block to math library
+- [ ] Reach fifty blocks(47/50)
 #Samdbox
 If you want to see blocks that aren't yet ready for release, go over to the sandbox: https://github.com/ealgase/Scratch-Boost/tree/sandbox
