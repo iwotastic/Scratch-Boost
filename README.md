@@ -13,7 +13,7 @@ Scratch Boost has the following libraries:
 - Miscellaneous
 - Scratch
 - Strings
-- Math
+- Operators
 - Comments
 
 #Goals
