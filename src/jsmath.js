@@ -38,15 +38,14 @@
             return (x != y);
         }
     }
-    ext.Cloud=function(enc,data){
-    	if (enc=='encode'){
-    		return "0x" + bytesToHex(pako.deflateRaw(data, { level: 9 }));
-    	}else{
-    		return pako.inflateRaw(hexToBytes(data.substr(2, data.length - 2)), { to: "string" });
-    	}
-    	
-    	
+    ext.encCloud = function(text) {
+        return "0x" + bytesToHex(pako.deflateRaw(text, { level: 9 }));
+        
     }
+    ext.decCloud = function(text) {
+        return pako.inflateRaw(hexToBytes(text.substr(2, text.length - 2)), { to: "string" });
+    }
+    
     var descriptor = {
         blocks: [
             ['r', 'π(Pi)', 'pi'],
@@ -57,7 +56,8 @@
             ['-'],
             ['b', '%m.truefalse', 'tf', true],
             ['-'],
-            ['r', "%m.encode text %s for cloud data", "Cloud", 'encode',''],
+            ['r', "encode text %s for cloud data", "encCloud", ''],
+            ['r', "decode text %s from cloud data", "decCloud", ''],
         ],
         menus:{
             inequals: ['≥', '≤', '≠'],
