@@ -31,7 +31,7 @@
 jQuery.get( url , data  , success){
     }
     ext.jsvar=function(var){
-    	switch(var){
+    	switch(var)
     	    case var1:
     	    return var1
     	    break;
@@ -62,7 +62,7 @@ jQuery.get( url , data  , success){
     	    case var10:
     	    return var10
     	    break;
-    	}
+    	
     }
     var descriptor = {
         blocks: [
