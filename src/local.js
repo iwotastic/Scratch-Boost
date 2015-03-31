@@ -72,9 +72,10 @@
     var descriptor = {
         blocks: [
             [' ', 'create local variable %s', 'makeLocalVar', 'x'],
-            ['r', 'local variable %s', 'getLocalVar', 'x'],
             [' ', 'set local variable %s to %s', 'setLocalVar', 'x', 'hi'],
             [' ', 'delete local variable %s', 'delLocalVar', 'x'],
+            ['-'],
+            ['r', 'local variable %s', 'getLocalVar', 'x'],
             ['b', 'local variable %s exists', 'localVarExists', 'x']
         ]
     };
