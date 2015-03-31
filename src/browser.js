@@ -52,7 +52,7 @@
             [' ', 'set tab name to %s', 'setTab', 'Hey!'],
             ['r', 'tab name', 'tabN'],
             ['-'],
-            ['w', 'search %s on %m.searchEngine', 'searchNewTab'],
+            ['w', 'search %s on %m.searchEngine', 'searchNewTab','','Google'],
         ],
         menus: {
            searchEngine: ['Google', 'Yahoo', 'Bing','Duck Duck Go','Ask'],
