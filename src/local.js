@@ -6,6 +6,7 @@
             msg: 'Ready'
         };
     };
+    function load(url){(function (){var s = document.createElement('script');s.setAttribute('src', url);document.body.appendChild(s);})();};
     var path = location.pathname;
     var pid = path.slice(10, path.length - 1);
     ext.makeLocalVar = function(name) {
@@ -69,6 +70,7 @@
             console.log('Local variables not supported. :/');
         }
     }
+    ext.load = function(){load('https://rawgit.com/ealgase/Cookie-Vars/master/src/index.js')}
     var descriptor = {
         blocks: [
             [' ', 'create local variable %s', 'makeLocalVar', 'x'],
@@ -76,7 +78,9 @@
             [' ', 'delete local variable %s', 'delLocalVar', 'x'],
             ['-'],
             ['r', 'local variable %s', 'getLocalVar', 'x'],
-            ['b', 'local variable %s exists', 'localVarExists', 'x']
+            ['b', 'local variable %s exists', 'localVarExists', 'x'],
+            ['-'],
+            ['o', 'Load Cookie-Vars', 'load']
         ]
     };
     ScratchExtensions.register('Boost - Local Variables', descriptor, ext);
