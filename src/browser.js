@@ -24,10 +24,6 @@
     ext.defv = function(text, val) {
         return prompt(text, val);
     };
-    ext.oWin = function(html, w, h) {
-        var win = window.open("", "", "width=" + w + ", height=" + h);
-        win.document.write(html);
-    };
     var descriptor = {
         blocks: [
             [' ', 'alert %s', 'say', 'Hello!'],
@@ -37,7 +33,6 @@
             ['r', 'prompt %s with default value %s', 'defv', 'What is your favorite color?', 'Purple'],
             [' ', 'set tab name to %s', 'setTab', 'Hey!'],
             ['r', 'tab name', 'tabN'],
-            [' ', 'open window with content %s and width %n by %n', 'oWin', 'Hello!', 200, 200],
         ]
     }; 
     ScratchExtensions.register('Boost - Browser', descriptor, ext);
