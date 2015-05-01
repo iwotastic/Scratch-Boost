@@ -22,6 +22,13 @@
             return (x != y);
         }
     }
+    ext.infa=function(function1){if (function1=='infinity')
+    {
+     return Infinity;   
+    }else{
+     return NaN;   
+    }
+        }
     var descriptor = {
         blocks: [
             ['r', 'π(Pi)', 'pi'],
@@ -31,11 +38,13 @@
             ['b', '%n %m.inequals %n', 'inequal', 2, '≠', 2],
             ['-'],
             ['b', '%m.truefalse', 'tf', true],
+            ['r', '%m.inf', 'infa', 'NaN'],
         ],
         menus:{
             inequals: ['≥', '≤', '≠'],
             math: ['+','-','*','/','^'],
             truefalse: ['true','false'],
+            inf: ['infinity','NaN'],
         }
     };
     ScratchExtensions.register('Boost - Operators', descriptor, ext);
