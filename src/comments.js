@@ -11,9 +11,7 @@
             ['c', 'block comment', 'bcom'],
             ['e', 'double block comment', 'ecom'],
             ['s', 'comment %s', 'com1', 'Blah Blah Blah'],
-        ],
-        menus: {
-        }
+        ]
     };
     ScratchExtensions.register('Boost - Comments', descriptor, ext);
 })({});
