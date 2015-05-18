@@ -41,7 +41,6 @@
         return ((r*65536)+(g*256)+b);
     }
     ext.com = function() {}
-    ext.bcom = function() {}
     ext.when = function(tf) {
         if(readyS){
             if(tf){
@@ -68,7 +67,6 @@
             ['r', 'color r: %n g: %n b: %n', 'rgb', 255, 255, 255],
             ['b', 'Scratch Boost installed?', 'bi'],
             [' ', 'comment %s', 'com', 'Blah Blah Blah'],
-            ['c', 'block comment', 'bcom'],
             ['h', 'whenever %b becomes true', 'when', null],
         ],
         menus: {
