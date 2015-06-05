@@ -7,5 +7,5 @@ ScratchExtensions.loadExternalJS('https://rawgit.com/Iwotastic/Scratch-Boost/mas
 ScratchExtensions.loadExternalJS('https://rawgit.com/Iwotastic/Scratch-Boost/master/src/browser.js');
 $(".box-head > .buttons").append('<div class="button" onclick="info()"><span class="white">Scratch Boost</span></div>');
 function info() {
-    window.open("http://iwotastic.github.io/Scratch-Boost/connect/");
+    window.open("http://iwotastic.github.io/Scratch-Boost/connect/", "", "width=400, height=600");
 }
