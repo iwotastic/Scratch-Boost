@@ -58,6 +58,9 @@
             }
         }
     }
+    ext.toNum = function(bool) {
+	return (bool) ? 1 : 0
+    }
     var descriptor = {
         blocks: [
             ['h', 'when countdown goes off', 'countdownOff'],
@@ -68,6 +71,7 @@
             ['b', 'Scratch Boost installed?', 'bi'],
             [' ', 'comment %s', 'com', 'Blah Blah Blah'],
             ['h', 'whenever %b becomes true', 'when', null],
+            ['r', '%b to number', 'toNum', null],
         ],
         menus: {
             inequals: ['≥', '≤', '≠']
