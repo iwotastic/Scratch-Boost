@@ -1,45 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Scratch boost by Iwotastic</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta charset="UTF-8">
+    <title>Scratch Boost by Iwotastic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Scratch Boost</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/Iwotastic/Scratch-Boost" class="btn">View on GitHub</a>
+      <a href="https://github.com/Iwotastic/Scratch-Boost/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Iwotastic/Scratch-Boost/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <h1>Scratch boost</h1>
-        <p></p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/Iwotastic/Scratch-Boost" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/Iwotastic/Scratch-Boost/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/Iwotastic/Scratch-Boost/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h1>
 
 <p>Scratch Boost is an extension for the website Scratch that adds several new blocks.</p>
@@ -47,14 +27,69 @@
 <h1>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
 
-<p>To install Scratch Boost all you have to do is drag this bookmarklet <a href="http://www.w3schools.com">Scratch Boost</a>. Then, when viewing a Scratch project click the bookmarklet to install Scratch Boost.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/Iwotastic">Iwotastic</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+<p>To install Scratch Boost all you have to do is drag this bookmarklet Scratch Boost. Then, when viewing a Scratch project click the bookmarklet to install Scratch Boost.</p>
+
+<h1>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h1>
+
+<p>If you want to know what a certain block does you've come to the right place.</p>
+
+<h2>
+<a id="browser" class="anchor" href="#browser" aria-hidden="true"><span class="octicon octicon-link"></span></a>Browser</h2>
+
+<p>All the blocks that can interact with your browser.</p>
+
+<h3>
+<a id="alert-message" class="anchor" href="#alert-message" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>alert [message]</code>
+</h3>
+
+<p>Shows a popup box that says <code>message</code>.</p>
+
+<h3>
+<a id="ask-message" class="anchor" href="#ask-message" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>ask [message]</code>
+</h3>
+
+<p>Shows a popup box that asks <code>message</code> and returns <code>true</code> if the user clicked <code>Ok</code> or <code>false</code> if the user clicked <code>Cancel</code>.</p>
+
+<h3>
+<a id="prompt-message" class="anchor" href="#prompt-message" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>prompt [message]</code>
+</h3>
+
+<p>Shows a popup box that asks <code>message</code> and returns what the user entered.</p>
+
+<h3>
+<a id="show-copy-box-text" class="anchor" href="#show-copy-box-text" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>show copy box [text]</code>
+</h3>
+
+<p>Show a popup box that prompts the user to copy <code>text</code>.</p>
+
+<h3>
+<a id="prompt-message-with-default-value-value" class="anchor" href="#prompt-message-with-default-value-value" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>prompt [message] with default value [value]</code>
+</h3>
+
+<p>Shows a popup box that asks <code>message</code> and has <code>value</code> already entered into it. Then, returns what the user entered.</p>
+
+<h3>
+<a id="set-tab-name-to-name" class="anchor" href="#set-tab-name-to-name" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>set tab name to [name]</code>
+</h3>
+
+<p>Sets the tab's name to <code>name</code>.</p>
+
+<h3>
+<a id="tab-name" class="anchor" href="#tab-name" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>tab name</code>
+</h3>
+
+<p>Returns the tab's name.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Iwotastic/Scratch-Boost">Scratch Boost</a> is maintained by <a href="https://github.com/Iwotastic">Iwotastic</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+    </section>
+
+  
   </body>
 </html>
+
