@@ -10,8 +10,13 @@
     ext.rObjpoObj = function(pro, obj) {
         return JSON.stringify(JSON.parse(obj)[pro]);
     };
+    ext.rpoObj = function(pro, obj) {
+        return JSON.parse(obj)[pro]
+    };
     ext.wpoObj = function(pro, obj, val) {
-        return JSON.stringify(JSON.parse(obj)[pro] = val);
+        var json = JSON.parse(obj);
+        json[pro] = val;
+        return JSON.stringify(json);
     };
     var descriptor = {
         blocks: [
