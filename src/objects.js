@@ -24,7 +24,8 @@
             ['r', 'object %s of %s', 'rObjpoObj', 'Friends', null],
             ['r', '%s of %s', 'rpoObj', 'Name', null],
             ['r', 'set %s of %s to %s', 'wpoObj', 'Name', null, 'Billy'],
-        ]
+        ],
+        url: "http://Iwotastic.github.io/Scratch-Boost/index.html#objects"
     }; 
     ScratchExtensions.register('Boost - Objects', descriptor, ext);
 })({});
