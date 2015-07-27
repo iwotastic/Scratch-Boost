@@ -23,7 +23,8 @@
         blocks: [
             [' ', 'import Scratch extension from URL: %s', 'imp'],
             [' ', 'run JS %s', 'exe', 'alert("Scratch is awesome!");'],
-        ]
+        ],
+        url: "http://Iwotastic.github.io/Scratch-Boost/index.html#javascript"
     };
     ScratchExtensions.register('Boost - JavaScript', descriptor, ext);
 })({});
