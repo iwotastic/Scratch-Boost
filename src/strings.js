@@ -42,7 +42,8 @@
             ['b', '%s to boolean', 'toBool', 'true'],
             ['r', 'number of words in %s', 'wordN', 'Scratch is awesome!'],
             ['r', 'how many times is %s in %s', 'numOf', 'cat', 'I like cats, do you like cats?'],
-        ]
+        ],
+        url: "http://Iwotastic.github.io/Scratch-Boost/index.html#strings"
     };
     ScratchExtensions.register('Boost - Strings', descriptor, ext); 
 })({}); 
