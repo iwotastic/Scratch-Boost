@@ -63,7 +63,8 @@
             ['r', 'local variable %s', 'getLocalVar', 'x'],
             [' ', 'set local variable %s to %s', 'setLocalVar', 'x', 'hi'],
             [' ', 'delete local variable %s', 'delLocalVar', 'x']
-        ]
+        ],
+        url: "http://Iwotastic.github.io/Scratch-Boost/index.html#local-variables"
     };
     ScratchExtensions.register('Boost - Local Variables', descriptor, ext);
 })({});
