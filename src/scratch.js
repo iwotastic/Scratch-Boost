@@ -74,7 +74,8 @@
         menus: {
             domed: ['navbar', 'navbar background'],
             links: ['project page', 'the profile page of', 'studio', 'disscussion topic', 'the scratch search results of']
-        }
+        },
+        url: "http://Iwotastic.github.io/Scratch-Boost/index.html#scratch"
     };
     ScratchExtensions.register('Boost - Scratch', descriptor, ext);
 })({}); 
