@@ -75,7 +75,8 @@
         ],
         menus: {
             inequals: ['≥', '≤', '≠']
-        }
+        },
+        url: "http://Iwotastic.github.io/Scratch-Boost/index.html#miscellaneous"
     };
     ScratchExtensions.register('Boost - Miscellaneous', descriptor, ext);
 })({}); 
