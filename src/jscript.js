@@ -17,13 +17,22 @@
                 eval(js);
                 userHasAllowedJs = true;
             }
-        }
+	}
+    };
+    ext.req = function(type, url, data, callback) {
+        $.ajax({url: url, type: type, data: data, success: function(data){
+        	callback(data);
+        }});
     };
     var descriptor = {
         blocks: [
-            [' ', 'import Scratch extension from URL: %s', 'imp'],
-            [' ', 'run JS %s', 'exe', 'alert("Scratch is awesome!");'],
+        	[' ', 'import Scratch extension from URL: %s', 'imp'],
+        	[' ', 'run JS %s', 'exe', 'alert("Scratch is awesome!");'],
+        	['R', 'send %m.requests request to URL: %s with data %s', 'req', 'GET', 'https://scratch.mit.edu/', null],
         ],
+        menus: {
+        	requests: ['GET', 'POST', 'PUT', 'DELETE']
+        }
         url: "http://Iwotastic.github.io/Scratch-Boost/index.html#javascript"
     };
     ScratchExtensions.register('Boost - JavaScript', descriptor, ext);
