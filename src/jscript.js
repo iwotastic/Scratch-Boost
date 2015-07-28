@@ -32,7 +32,7 @@
         ],
         menus: {
         	requests: ['GET', 'POST', 'PUT', 'DELETE']
-        }
+        },
         url: "http://Iwotastic.github.io/Scratch-Boost/index.html#javascript"
     };
     ScratchExtensions.register('Boost - JavaScript', descriptor, ext);
