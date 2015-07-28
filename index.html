@@ -27,7 +27,7 @@
 <h1>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
 
-<p>To install Scratch Boost all you have to do is drag this bookmarklet <a href="javascript:(function%20()%7Bvar%20s%20=%20document.createElement('script');s.setAttribute('src',%20'https://rawgit.com/Iwotastic/Scratch-Boost/master/src/installer.js');document.body.appendChild(s);%7D)();">Scratch Boost</a>. Then, when viewing a Scratch project click the bookmarklet to install Scratch Boost.</p>
+<p>To install Scratch Boost all you have to do is drag this bookmarklet <a href="">Scratch Boost</a>. Then, when viewing a Scratch project click the bookmarklet to install Scratch Boost.</p>
 
 <h1>
 <a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h1>
@@ -97,6 +97,12 @@
 </h3>
 
 <p>Runs <code>script</code> as JavaScript.</p>
+
+<h3>
+<a id="send-get-post-put-or-delete-request-to-url-url-with-data-data" class="anchor" href="#send-get-post-put-or-delete-request-to-url-url-with-data-data" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>send [GET, POST, PUT, or DELETE] request to URL: [url] with data [data]</code>
+</h3>
+
+<p>Sends a request of type <code>GET</code>, <code>POST</code>, <code>PUT</code>, or <code>DELETE</code> to the url <code>url</code> along with optional data <code>data</code>. Then returns the result (if any). make sure that if <code>data</code> is included that it is a Scratch Boost Object. </p>
 
 <h2>
 <a id="local-variables" class="anchor" href="#local-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Local Variables</h2>
@@ -189,7 +195,7 @@
 <h2>
 <a id="objects" class="anchor" href="#objects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Objects</h2>
 
-<p>Bringing object oriented programming to Scratch!</p>
+<p>Bringing object oriented programming to Scratch! <strong>Note:</strong> All Object blocks return a JSON value.</p>
 
 <h3>
 <a id="create-object" class="anchor" href="#create-object" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>create object</code>
