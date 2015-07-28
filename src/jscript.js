@@ -20,9 +20,11 @@
 	}
     };
     ext.req = function(type, url, data, callback) {
-        $.ajax({url: url, type: type, data: data, success: function(data){
-        	callback(data);
-        }});
+    	if(confirm('Scratch Boost ►►\n\nThis project wants to use the "' + type + '" method to send a request to ' + url + ' Do you trust this project?')) {
+        	$.ajax({url: url, type: type, data: data, success: function(data){
+        		callback(data);
+        	}});
+    	}
     };
     var descriptor = {
         blocks: [
