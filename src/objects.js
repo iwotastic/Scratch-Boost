@@ -8,14 +8,14 @@
         return '{}';
     };
     ext.rObjpoObj = function(pro, obj) {
-        return JSON.stringify(JSON.parse(obj)[pro]);
+        return JSON.stringify(JSON.parse(obj)[pro.trim()]);
     };
     ext.rpoObj = function(pro, obj) {
-        return JSON.parse(obj)[pro]
+        return JSON.parse(obj)[pro.trim()]
     };
     ext.wpoObj = function(pro, obj, val) {
         var json = JSON.parse(obj);
-        json[pro] = val;
+        json[pro.trim()] = val;
         return JSON.stringify(json);
     };
     var descriptor = {
