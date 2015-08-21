@@ -1,23 +1,9 @@
 (function(ext) {
-    var countDown = false;
     var readyS = true;
-	ext._shutdown = function() {};
+    ext._shutdown = function() {};
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
     };
-    ext.countdown = function(time) {
-        window.setTimeout(function(){
-            countDown = true;
-        }, time*1000);
-    }
-    ext.countdownOff = function() {
-        if (countDown === true) {
-            countDown = false;
-            return true;
-        }else{
-            return false;
-        }
-    }
     ext.ifElseVal = function(tf, op1, op2) {
         if (tf) {
             return op1;
