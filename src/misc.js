@@ -49,8 +49,6 @@
     }
     var descriptor = {
         blocks: [
-            ['h', 'when countdown goes off', 'countdownOff'],
-            [' ', 'set countdown to %n secs', 'countdown', 1],
             ['r', 'if %b then %s else %s', 'ifElseVal', null, '1', '0'],
             ['b', '%n %m.inequals %n', 'inequal', 2, '≠', 2],
             ['r', 'color r: %n g: %n b: %n', 'rgb', 255, 255, 255],
