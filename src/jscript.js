@@ -35,7 +35,7 @@
         closeOnCancel: false
       }, function(isConfirm){
         if (isConfirm) {
-          eval(js)
+          eval(js);
         } else {
           swal("Ok!", "This project won't run the JavaScript this time", "info");
         }
