@@ -1,32 +1,52 @@
 (function(ext) {
-    var userHasAllowedJs = false;
-	ext._shutdown = function() {};
+	  ext._shutdown = function() {};
     ext._getStatus = function() {
         return {status: 2, msg: "Ready"};
     };
-    ext.imp = function(url) {
-        if (confirm("Scratch Boost ►►︎︎︎\nThis project wants to import a Scratch extension from the URL " + url + ". Do you allow this?")) {
-            ScratchExtensions.loadExternalJS(url);
-        }
-    };
-    ext.exe = function(js) {
-        if (userHasAllowedJs) {
-            eval(js);
+    ext.imp = function(url, callback) {
+      swal({
+        title: "Import Extention",
+        text: "Do you allow this project to import an extension from <a href=\"" + url + "\">" + url + "</a>?",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, import it",
+        cancelButtonText: "No, don't do it",
+        closeOnConfirm: false,
+        closeOnCancel: false
+      }, function(isConfirm){
+        if (isConfirm) {
+          ScratchExtensions.loadExternalJS(url);
+          swal("Importing", "Scratch Boost will import the extension.", "success");
         }else{
-            if(confirm("Scratch Boost ►►\n\nThis project uses JavaScript. Do you trust this project?")) {
-                eval(js);
-                userHasAllowedJs = true;
-            }
-	}
+          swal("Ok!", "This project won't import this extension.", "info");
+        }
+        callback();
+      });
+    };
+    ext.exe = function(js, callback) {
+      swal({
+        title: "This Project Uses JavaScript!",
+        text: "Do you allow this project to run the JavaScript?",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, do it this time",
+        cancelButtonText: "No, not this time",
+        closeOnConfirm: false,
+        closeOnCancel: false
+      }, function(isConfirm){
+        if (isConfirm) {
+          eval(js)
+        } else {
+          swal("Ok!", "This project won't run the JavaScript this time", "info");
+        }
+        callback();
+      });
     };
     var descriptor = {
         blocks: [
-        	[" ", "import Scratch extension from URL: %s", "imp"],
-        	[" ", "run JS %s", "exe", "alert(\"Scratch is awesome!\");"],
+        	["w", "import Scratch extension from URL: %s", "imp"],
+        	["w", "run JS %s", "exe", "alert(\"Scratch is awesome!\");"],
         ],
-        menus: {
-        	requests: ["GET", "POST", "PUT", "DELETE"]
-        },
         url: "http://Iwotastic.github.io/Scratch-Boost/index.html#javascript"
     };
     ScratchExtensions.register("Boost - JavaScript", descriptor, ext);
