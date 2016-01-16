@@ -31,11 +31,11 @@
         showCancelButton: true,
         confirmButtonText: "Yes, do it this time",
         cancelButtonText: "No, not this time",
-        closeOnConfirm: false,
         closeOnCancel: false
       }, function(isConfirm){
         if (isConfirm) {
           eval(js);
+          swal("Running", "Runnning the JavaScript", "success");
         } else {
           swal("Ok!", "This project won't run the JavaScript this time", "info");
         }
