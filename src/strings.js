@@ -1,7 +1,7 @@
 (function(ext) {
 	ext._shutdown = function() {};
     ext._getStatus = function() {
-        return {status: 2, msg: 'Ready'};
+        return {status: 2, msg: "Ready"};
     };
     ext.contains = function(text, check) {
         if (text.search(check) != -1) {
@@ -36,14 +36,14 @@
     }
     var descriptor = {
         blocks: [
-            ['b', '%s contains %s', 'contains', 'abc', 'a'],
-            ['r', 'where is %s in %s', 'where', 'b', 'abc'], 
-            ['r', 'letters %n to %n of %s', 'nton', 1, 3, 'caterpillar'],
-            ['b', '%s to boolean', 'toBool', 'true'],
-            ['r', 'number of words in %s', 'wordN', 'Scratch is awesome!'],
-            ['r', 'how many times is %s in %s', 'numOf', 'cat', 'I like cats, do you like cats?'],
+            ["b", "%s contains %s", "contains", "abc", "a"],
+            ["r", "where is %s in %s", "where", "b", "abc"],
+            ["r", "letters %n to %n of %s", "nton", 1, 3, "caterpillar"],
+            ["b", "%s to boolean", "toBool", "true"],
+            ["r", "number of words in %s", "wordN", "Scratch is awesome!"],
+            ["r", "how many times is %s in %s", "numOf", "cat", "I like cats, do you like cats?"],
         ],
         url: "http://Iwotastic.github.io/Scratch-Boost/index.html#strings"
     };
-    ScratchExtensions.register('Boost - Strings', descriptor, ext); 
-})({}); 
+    ScratchExtensions.register("Boost - Strings", descriptor, ext);
+})({});

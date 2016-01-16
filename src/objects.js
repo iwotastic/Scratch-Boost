@@ -2,10 +2,10 @@
     var myObjects = [];
     ext._shutdown = function() {};
     ext._getStatus = function() {
-        return {status: 2, msg: 'Ready'};
+        return {status: 2, msg: "Ready"};
     };
     ext.nObj = function() {
-        return '{}';
+        return "{}";
     };
     ext.rObjpoObj = function(pro, obj) {
         return JSON.stringify(JSON.parse(obj)[pro.trim()]);
@@ -20,12 +20,12 @@
     };
     var descriptor = {
         blocks: [
-            ['r', 'create object', 'nObj'],
-            ['r', 'object %s of %s', 'rObjpoObj', 'Friends', null],
-            ['r', '%s of %s', 'rpoObj', 'Name', null],
-            ['r', 'set %s of %s to %s', 'wpoObj', 'Name', null, 'Billy'],
+            ["r", "create object", "nObj"],
+            ["r", "object %s of %s", "rObjpoObj", "Friends", null],
+            ["r", "%s of %s", "rpoObj", "Name", null],
+            ["r", "set %s of %s to %s", "wpoObj", "Name", null, "Billy"],
         ],
         url: "http://Iwotastic.github.io/Scratch-Boost/index.html#objects"
-    }; 
-    ScratchExtensions.register('Boost - Objects', descriptor, ext);
+    };
+    ScratchExtensions.register("Boost - Objects", descriptor, ext);
 })({});

@@ -3,7 +3,7 @@
     var readyS = true;
 	ext._shutdown = function() {};
     ext._getStatus = function() {
-        return {status: 2, msg: 'Ready'};
+        return {status: 2, msg: "Ready"};
     };
     ext.countdown = function(time) {
         window.setTimeout(function(){
@@ -26,11 +26,11 @@
         }
     }
     ext.inequal = function(x, ine, y) {
-        if (ine == '≥') {
+        if (ine == "≥") {
             return (x >= y);
-        }else if (ine == '≤') {
+        }else if (ine == "≤") {
             return (x <= y);
-        }else if (ine == '≠') {
+        }else if (ine == "≠") {
             return (x != y);
         }
     }
@@ -63,20 +63,20 @@
     }
     var descriptor = {
         blocks: [
-            ['h', 'when countdown goes off', 'countdownOff'],
-            [' ', 'set countdown to %n secs', 'countdown', 1],
-            ['r', 'if %b then %s else %s', 'ifElseVal', null, '1', '0'],
-            ['b', '%n %m.inequals %n', 'inequal', 2, '≠', 2],
-            ['r', 'color r: %n g: %n b: %n', 'rgb', 255, 255, 255],
-            ['b', 'Scratch Boost installed?', 'bi'],
-            [' ', 'comment %s', 'com', 'Blah Blah Blah'],
-            ['h', 'whenever %b becomes true', 'when', null],
-            ['r', '%b to number', 'toNum', null],
+            ["h", "when countdown goes off", "countdownOff"],
+            [" ", "set countdown to %n secs", "countdown", 1],
+            ["r", "if %b then %s else %s", "ifElseVal", null, "1", "0"],
+            ["b", "%n %m.inequals %n", "inequal", 2, "≠", 2],
+            ["r", "color r: %n g: %n b: %n", "rgb", 255, 255, 255],
+            ["b", "Scratch Boost installed?", "bi"],
+            [" ", "comment %s", "com", "Blah Blah Blah"],
+            ["h", "whenever %b becomes true", "when", null],
+            ["r", "%b to number", "toNum", null],
         ],
         menus: {
-            inequals: ['≥', '≤', '≠']
+            inequals: ["≥", "≤", "≠"]
         },
         url: "http://Iwotastic.github.io/Scratch-Boost/index.html#miscellaneous"
     };
-    ScratchExtensions.register('Boost - Miscellaneous', descriptor, ext);
-})({}); 
+    ScratchExtensions.register("Boost - Miscellaneous", descriptor, ext);
+})({});
