@@ -20,7 +20,7 @@
 	}
     };
     ext.req = function(type, url, data, callback) {
-    	if(confirm("Scratch Boost ►►\n\nThis project wants to use the "" + type + "" method to send a request to " + url + " Do you trust this project?")) {
+    	if(confirm("Scratch Boost ►►\n\nThis project wants to use the " + type + " method to send a request to " + url + " Do you trust this project?")) {
         	$.ajax({url: url, type: type, data: JSON.parse(data), success: function(d){
         		callback(JSON.stringify(d));
         	}});
