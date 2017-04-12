@@ -15,7 +15,7 @@
     };
     ext.wpoObj = function(pro, obj, val) {
         var json = JSON.parse(obj);
-        json[pro.trim()] = JSON.stringify(val);
+        json[pro.trim()] = val;
         return JSON.stringify(json);
     };
     var descriptor = {
